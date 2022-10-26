@@ -4,17 +4,10 @@ def palindrom(word):
     Argument: word
     """
     if type(word)!=str:
-        r=False
-        return(r)
+        return False
     else:
-        x=len(word)
-        while x!=0:
-            if word[x-1]!=word[-x]:
-                r=False
-                return(r)
-            else:
-                x=x-1
-        if x==0:
-            r=True
-            return(r)
-palindrom("ab")
+        if word==word[::-1]:
+            return True
+        else:
+            return False
+palindrom("kajak")
