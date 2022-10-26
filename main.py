@@ -1,6 +1,16 @@
 def palindrom(word):
     if type(word)!=str:
-        pass
+        r=False
+        return(r)
     else:
         x=len(word)
-palindrom("szesnaście")
+        while x!=0:
+            if word[x-1]!=word[-x]:
+                r=False
+                return(r)
+            else:
+                x=x-1
+        if x==0:
+            r=True
+            return(r)
+palindrom("ab")
