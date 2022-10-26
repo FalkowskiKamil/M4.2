@@ -1,4 +1,8 @@
 def palindrom(word):
+    """
+    Function checks if the argument is a palindrome
+    Argument: word
+    """
     if type(word)!=str:
         r=False
         return(r)
